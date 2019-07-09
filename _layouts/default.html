@@ -11,7 +11,7 @@
     <meta name="generator" content="Jekyll v3.8.6" />
     <meta name="description" content="{{ site.description }}" />
     <link rel="canonical" href="{{ site.url }}" />
-    <link rel="icon" href="{{ site.logo }}">
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 
     <meta property="og:title" content="{{ site.title }}" />
     <meta property="og:locale" content="en_US" />    
@@ -24,10 +24,10 @@
     <!-- end SEO tags -->
 
     <!-- style -->    
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/navbar.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/index.css">    
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/navbar.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/footer.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css">    
     
   </head>
   <body>
@@ -36,8 +36,8 @@
     {{ content }}
 
     <!-- javascript -->    
-    <script src="/assets/js/jquery.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>    
-    <script src="/assets/js/index.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>    
+    <script src="{{ site.baseurl }}/assets/js/index.js"></script>
   </body>
 </html>
