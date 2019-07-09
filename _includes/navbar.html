@@ -10,7 +10,7 @@
         </span>
 
         <!-- page logo -->
-        <a href="/" class="brand">
+        <a href="{{ site.baseurl }}/" class="brand">
             <img src="{{ site.baseurl }}/assets/images/turing-logo.svg" alt="{{ site.title }}">
             <span>{{ site.title }}</span>
         </a>
@@ -19,16 +19,16 @@
         <div class="drowDownMenu">
             <!-- pages list auto -->
             <ul class="pages nav navbar-nav navbar-left"> 
-                <li><a href="/">Get Started</a></li>
-                <li><a href="/docs/">Documentation</a></li>
-                <li><a href="/">Tutorials</a></li>
+                <li><a href="{{ site.baseurl }}/">Get Started</a></li>
+                <li><a href="{{ site.baseurl }}/docs/">Documentation</a></li>
+                <li><a href="{{ site.baseurl }}/">Tutorials</a></li>
             </ul>
             
             <!-- search and download button container -->
             <ul class="search-download nav navbar-nav navbar-right">
                 <!-- download software link -->
                 <li class="download">
-                    <a itemprop="downloadUrl" class="link-button" href="/" id="nav-download">
+                    <a itemprop="downloadUrl" class="link-button" href="{{ site.baseurl }}/" id="nav-download">
                         <span>Github</span>
                     </a>
                 </li>
