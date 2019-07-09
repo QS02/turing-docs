@@ -19,7 +19,7 @@ email: support@turing.jl
 description: >- # this means to ignore newlines until "baseurl:"
   Turing is a universal probabilistic programming language with an intuitive modelling interface, composable probabilistic inference, and computational scalability.
 
-url: "https://turing-docs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://gold-developer.github.io/turing-docs/" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/images/logo.png
 categories: [fruit, meat, vegetable, cheese, drink]
 lang : en
