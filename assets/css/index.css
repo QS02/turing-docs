@@ -1,5 +1,5 @@
 h1, h2, h3 {
-  font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 100; }
 
 h4, .faux-h4 {
@@ -38,7 +38,7 @@ a {
     margin: 0px -15px; }
     .home-page .jumbotron .left h1 {
       font-size: 5rem;
-      font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+      font-family: "Courier New", Courier, monospace;
       font-weight: 100;
       color: inherit;
       margin: .67em 0px 10px;
@@ -321,7 +321,7 @@ a {
       background-color: #373277;
       color: white;
       margin: 20px 0;
-      font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+      font-family: "Courier New", Courier, monospace;
       font-weight: 600;
       font-size: 20px;
       padding: 15px 35px;
@@ -351,7 +351,7 @@ a {
     font-size: 1.8rem;
     width: 240px;
     background-color: #373277;
-    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+    font-family: "Courier New", Courier, monospace;
     font-weight: 600;
     cursor: pointer; }
     .home-page .alt-downloads .link-button:hover {
