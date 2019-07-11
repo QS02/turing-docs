@@ -51,15 +51,12 @@ $(document).ready(function(){
         PreviousScrollTop = DivElmnt.scrollTop;
         ScrollInterval    = setInterval(scrollDiv, ScrollRate);
     }
-/*
-    $(window).scroll(function() {     
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
-            $("#header").addClass("active");
-        }
-        else {
-            $("#header").removeClass("active");
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 10) {
+            $('#navbar').addClass('floatingNav');
+        } else {
+            $('#navbar').removeClass('floatingNav');
         }
     });
-s*/
 })

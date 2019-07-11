@@ -452,3 +452,8 @@ a {
 .archive__item-body > p > a:hover {
   background-color: #e4e4e4;
 }   
+
+.floatingNav {
+  box-shadow: 0px 1px 10px #150f1d;
+  transition: 0.2s;
+}
