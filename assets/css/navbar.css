@@ -28,7 +28,7 @@ body {
   /* Firefox */ }
 
 #navbar {
-  background: #373277;
+  background: #563d7c;
   color: #fff;
   font-size: 16px;
   overflow: hidden;
@@ -49,13 +49,11 @@ body {
     display: inline-block;
     float: left; }
     #navbar .brand img {
-      width: 20px;
+      width: 40px;
       height: 20px;
       vertical-align: bottom;
-      transform: scale(1.4);
-      margin-right: 5px; 
-      border-radius: 50%;
-      background: white;}
+      transform: scale(1.5);
+      margin-right: 5px;}
   #navbar .drowDownMenu {
     display: inline; }
   #navbar .pages {

@@ -29,7 +29,7 @@ a {
 .home-page .jumbotron {
   padding-top: 30px;
   margin-bottom: 0px;
-  background: #373277;
+  background: #563d7c;
   background-repeat: no-repeat;
   background-position: bottom; 
   background-size: 100% 70%;
@@ -318,7 +318,7 @@ a {
     text-align: center;
     margin-top: 20px; }
     .home-page .getting-started .caption .link-button {
-      background-color: #373277;
+      background-color: #563d7c;
       color: white;
       margin: 20px 0;
       font-family: "Courier New", Courier, monospace;
@@ -350,7 +350,7 @@ a {
     padding: 10px 0;
     font-size: 1.8rem;
     width: 240px;
-    background-color: #373277;
+    background-color: #563d7c;
     font-family: "Courier New", Courier, monospace;
     font-weight: 600;
     cursor: pointer; }
@@ -443,3 +443,12 @@ a {
       margin-bottom: 40px; }
   .home-page .getting-started .supported-languages-list {
     text-align: center; } }
+
+.archive__item-body > p > a {
+    border-color: black;
+    color: black;
+  }   
+
+.archive__item-body > p > a:hover {
+  background-color: #e4e4e4;
+}   
