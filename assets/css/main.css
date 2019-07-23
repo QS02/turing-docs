@@ -694,6 +694,7 @@ hr {
 .no-js .md-header-nav__topic+.md-header-nav__topic {
     display: none;
 }
+
 .md-header-nav__title {
     font-size: 2rem;
 }
