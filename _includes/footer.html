@@ -1,50 +1,42 @@
-<footer role="contentinfo">
-    <!-- content -->
-    <div class="container">
-        <div class="row">
-            <div class="left col-md-7">
-                <ul class="links">
-                    <li>
-                        <span class="message">Hello from Seattle.</span>
-                    </li>
-                    <li>
-                        <a href="https://go.microsoft.com/fwlink/?LinkID=533687" onclick="followOnTwitter()" role="button" tabindex="0">Follow @code</a>
-                    </li>
-                    <li>
-                        <div class="github-star-button">
-                            <iframe src="https://ghbtns.com/github-btn.html?user=Microsoft&amp;repo=vscode&amp;type=star&amp;count=true" frameborder="0" scrolling="0" width="130px" height="20px" title="GitHub follow button" aria-label="GitHub follow button"></iframe>
-                        </div>
-                    </li>
-
-                    <script>
-                        function followOnTwitter() {
-                            var windowFeatures = "location=yes,height=600,width=550,scrollbars=yes,status=yes";
-                            var originalReferer = "&original_referer=" + document.URL;
-                            var screenName = "&screen_name=code";
-                            var URL = "https://twitter.com/intent/follow?" + originalReferer + screenName;
-                            window.open(URL, "_blank", windowFeatures);
-                        }
-                    </script>
-                </ul>
+<footer class="c-footer md-footer-nav">
+  <div class="u-container c-footer__container">
+    <nav class="md-footer-nav__inner md-grid">
+         {% if page.next.url %}<a href="{{ site.baseurl }}{{ page.next.url }}" title="{{ page.next.title }}" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                {{ page.next.title }}
+              </span>
             </div>
-            <div class="right col-md-5">
-                <ul class="links">
-                    <li><a id="footer-support-link" href="https://support.microsoft.com/en-us/getsupport?wf=0&amp;tenant=ClassicCommercial&amp;oaspworkflow=start_1.0.0.0&amp;locale=en-us&amp;supportregion=en-us&amp;pesid=16064&amp;ccsid=636196895839595242" target="_blank">Support</a></li>
-                    <li><a id="footer-privacy-link" href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Privacy</a></li>
-                    <li><a id="footer-terms-link" href="https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx" target="_blank">Terms of Use</a></li>
-                    <li><a id="footer-license-link" href="{{'/License' | relative_url}}">License</a></li>
-                </ul>
-                <div class="copyright">
-                    <a id="footer-microsoft-link" class="logo" href="https://www.microsoft.com">
-                        <img class="microsoft-logo" src="{{'/assets/imgs/microsoft-logo.png' | relative_url}}" height="20" alt="Microsoft homepage">
-                    </a>
-                    <span> © 2019 
-                        <span itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization">
-                            <span itemprop="name">Microsoft</span>
-                        </span>
-                    </span>
-                </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
             </div>
-        </div>
+          </a>{% endif %}
+      </nav>
     </div>
+  
+   <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; {{ site.time | date: '%Y' }} - {{ site.author }}
+          </div>        
+      </div>
+      
+        
+  <div class="md-footer-social">    
+      <a href="https://github.com/{{ site.github_user }}" target="_blank" class="md-footer-social__link fa fa-github"></a>
+      {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" class="md-footer-social__link fa fa-twitter"></a>{% endif %}
+      {% if site.linkedin %}<a href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" class="md-footer-social__link fa fa-linkedin"></a>{% endif %}
+      {% if site.dockerhub %}<a href="http://hub.docker.com/r/{{ site.dockerhub }}" class="md-footer-social__link fa" target="_blank">
+        <img src="{{ site.baseurl }}/assets/img/docker-clear.png" style="margin-left:10px" width="20px">
+      </a>{% endif %}
+  </div>
+
+    </div>
+  </div>
+
 </footer>

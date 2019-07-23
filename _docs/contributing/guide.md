@@ -1,7 +1,8 @@
 ---
 title: Contributing
-permalink: /docs/contributing/
 ---
+
+# Contributing
 
 Turing is an open source project. If you feel that you have some relevant skills and are interested in contributing, then please do get in touch. You can contribute by opening issues on GitHub or implementing things yourself and making a pull request. We would also appreciate example models written using Turing.
 
@@ -9,12 +10,8 @@ Turing is an open source project. If you feel that you have some relevant skills
 Turing has a [style guide](/docs/style-guide/). It is not strictly necessary to review it before making a pull request, but you may be asked to change portions of your code to conform with the style guide before it is merged.
 
 
-<a id='How-to-Contribute-1'></a>
-
 ## How to Contribute
 
-
-<a id='Getting-Started-1'></a>
 
 ### Getting Started
 
@@ -27,15 +24,11 @@ Turing has a [style guide](/docs/style-guide/). It is not strictly necessary to 
 `git remote add upstream https://github.com/TuringLang/Turing.jl`.
 
 
-<a id='What-Can-I-Do?-1'></a>
-
 ### What Can I Do?
 
 
 Look at the [issues](https://github.com/TuringLang/Turing.jl/issues) page to find an outstanding issue. For instance, you could implement new features, fix bugs or write example models.
 
-
-<a id='Git-Workflow-1'></a>
 
 ### Git Workflow
 
