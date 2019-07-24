@@ -2854,6 +2854,15 @@ tt, code, kbd, samp, pre {
     background-color: #d2e6f5;
 }
 
+@media (min-width: 992px) {
+    .md-source[data-md-source='github'] {
+        background-color: #073c44;
+    }
+
+    .md-source__icon+.md-source__repository{
+        color: white;
+    }
+}
 
 @media (min-width: 2000px){
     .text-content {
