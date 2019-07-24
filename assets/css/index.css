@@ -61,7 +61,7 @@ body {
 
 @media (min-width: 990px){
 .jumbotron .bottom-padding{
-    display: none;
+    padding: 3rem;
 }
 }
 
