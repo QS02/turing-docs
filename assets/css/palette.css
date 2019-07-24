@@ -760,7 +760,7 @@ button[data-md-color-accent=deep-orange] {
 }
 @media only screen and (max-width:76.1875em) {
     html [data-md-color-primary=red] .md-nav--primary .md-nav__title--site {
-    background-color: {{ site.color }};
+    background-color: #073c44;
 }
 html [data-md-color-primary=pink] .md-nav--primary .md-nav__title--site {
     background-color: #e91e63;
