@@ -26,7 +26,7 @@ button[data-md-color-primary=red] {
     background-color: {{ site.navbarcolor }};
 }
 [data-md-color-primary=red] .md-nav__link--active, [data-md-color-primary=red] .md-nav__link:active {
-    color: {{ site.color }};
+    color: black;
 }
 [data-md-color-primary=red] .md-nav__item--nested>.md-nav__link {
     color: inherit;

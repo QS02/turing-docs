@@ -30,11 +30,27 @@
             <nav class="md-nav md-nav--secondary">
               <label class="md-nav__title" for="__toc">Table of contents</label>
               <ul class="md-nav__list" data-md-scrollfix="">
+                {% assign paths = page.url | remove: "/docs/" | split: "/" %}
                 {% for section in site.data.toc %}
+                {% assign sectionpaths = section.url | remove: "docs/" | split: "/" %}
                 <li class="md-nav__item">
-                  <a class="md-nav__link" href="{% if section.external_url %}{{ section.external_url }}{% else %}{{ site.baseurl }}/{{ section.url }}{% endif %}"
-                     id="pancakes-{{ section.title | slugify }}" 
-                     title="{{ section.title }}">{{ section.title }}</a>
+                  <a class="md-nav__link pancakes-parent 
+                  {% if sectionpaths.first == paths.first %}open-parent{% endif %}" 
+                  id="pancakes-{{ section.title | slugify }}" title="{{ section.title }}">{{ section.title }}</a>
+                  {% if section.children %}
+                  <nav class="md-nav">
+                      <ul class="md-nav__list">
+                          {% for child in section.children %}
+                          {% assign childs = child.url | remove: "docs/" | split: "/" %}
+                          <li class="md-nav__item">
+                          <a href="{% if child.external_url %}{{ child.external_url }}{% else %}{{ site.baseurl }}/{{ child.url }}{% endif %}" 
+                            title="{{ child.title }}" {% if sectionpaths.first != paths.first %}style="display:none;"{% endif %}
+                            {% if childs.last == paths.last %} style="color: red;"{% endif %}
+                            class="md-nav__link pancakes-child">{{ child.title }}</a>
+                          </li>{% endfor %}
+                      </ul>
+                  </nav>
+                  {% endif %}
                 </li>
                 {% endfor %}
               </ul>
@@ -55,7 +71,8 @@
              <a class="md-nav__link pancakes-parent {% if sectionpaths.first == paths.first %}open-parent{% endif %}" 
                 id="pancakes-{{ section.title | slugify }}" 
                 title="{{ section.title }}">{{ section.title }}</a>
-                {% if section.children %}<nav class="md-nav">
+                {% if section.children %}
+                <nav class="md-nav">
                     <ul class="md-nav__list">
                         {% for child in section.children %}
                         {% assign childs = child.url | remove: "docs/" | split: "/" %}
@@ -66,8 +83,10 @@
                            class="md-nav__link pancakes-child">{{ child.title }}</a>
                         </li>{% endfor %}
                     </ul>
-              </nav>{% endif %}
-         </li>{% endfor %}
+                </nav>
+                {% endif %}
+         </li>
+         {% endfor %}
 
         </ul>
       </nav>
