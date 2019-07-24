@@ -2850,20 +2850,6 @@ tt, code, kbd, samp, pre {
     color: #101010 !important;
 }
 
-.md-source[data-md-source='github']{
-    background-color: #d2e6f5;
-}
-
-@media (min-width: 992px) {
-    .md-source[data-md-source='github'] {
-        background-color: #073c44;
-    }
-
-    .md-source__icon+.md-source__repository{
-        color: white;
-    }
-}
-
 @media (min-width: 2000px){
     .text-content {
         margin-left: 3rem;
@@ -2919,7 +2905,19 @@ tt, code, kbd, samp, pre {
     background-color: white;
 }
 
+.md-source[data-md-source='github']{
+    background-color: #d2e6f5;
+}
 
+@media (min-width: 992px) {
+    .md-source[data-md-source='github'] {
+        background-color: #073c44;
+    }
+
+    .md-source__icon+.md-source__repository{
+        color: white;
+    }
+}
 /*# sourceMappingURL=data:application/json;
     charset=utf-8;
     base64, eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhc3NldHMvc3R5bGVzaGVldHMvYXBwbGljYXRpb24uYmEwZmQxYTYuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
