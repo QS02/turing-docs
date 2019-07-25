@@ -27,7 +27,7 @@ baseurl: "/turing-docs" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Social (First three Required)
-repo: "https://github.com/TuringLang/Turing.jl"
+repo: "https://github.com/gold-developer/turing-docs"
 github_user: "TuringLang"
 github_repo: "Turing.jl"
 
