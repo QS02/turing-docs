@@ -2863,33 +2863,15 @@ tt, code, kbd, samp, pre {
     }
 }
 
-@media (min-width: 1600px){
-    .md-header-nav {
-         max-width: 1500px; 
-    }
-}
-
 @media (min-width: 1800px){
     .md-header-nav {
-         max-width: 1600px; 
-    }
-}
-
-@media (min-width: 2000px){
-    .md-header-nav {
-         max-width: 1800px; 
-    }
-}
-
-@media (min-width: 2200px){
-    .md-header-nav {
-         max-width: 2000px; 
+         max-width: 1400px; 
     }
 }
 
 @media (min-width: 2400px){
     .md-header-nav {
-         max-width: 2200px; 
+         max-width: 1800px; 
     }
 }
 
