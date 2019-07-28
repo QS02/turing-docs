@@ -867,9 +867,6 @@ html .md-footer-meta.md-typeset a:focus, html .md-footer-meta.md-typeset a:hover
 .md-nav__item--nested>.md-nav__link:after {
     content: "\E313"}
 
-.open-parent:after {
-    content: "\E316" !important}
-
 html .md-nav__link[for=__toc], html .md-nav__link[for=__toc]+.md-nav__link:after, html .md-nav__link[for=__toc]~.md-nav {
     display: none;
 }
@@ -2899,6 +2896,23 @@ tt, code, kbd, samp, pre {
         color: white;
     }
 }
+
+@media (max-width: 992px){
+    .md-nav__item--nested .md-nav--secondary {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        display: none;
+    }
+
+    .md-sidebar__inner .md-nav--primary .mobile-sub-navbar-display {
+        position: absolute; 
+        display: block;
+        background-color: #fff;
+        opacity: 1;
+    }
+}
+
 
 /*# sourceMappingURL=data:application/json;
     charset=utf-8;

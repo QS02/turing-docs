@@ -20,6 +20,22 @@ $(".pancakes-parent").on('click', function(){
         $(this).addClass('open-parent');
     }
 })
+
+$(".navbar_bottom-border .md-nav__title").on('click', function(){
+    $(this).parent().removeClass('mobile-sub-navbar-display');
+})
+
+
+$(".navbar_bottom-border").on('click', function(){
+    if($(this).find('nav').hasClass( "invisible" )){
+        $(this).find('nav').addClass('mobile-sub-navbar-display');
+        $(this).find('nav').removeClass( "invisible" );
+    }
+    else {
+        $(this).find('nav').addClass( "invisible" );
+    }
+})
+
 </script>
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
