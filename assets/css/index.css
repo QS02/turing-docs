@@ -245,3 +245,9 @@ sub a {
     bottom: 1rem;
     right: 1rem;
 }
+
+@media (max-width: 767px){
+    .ecosystem-card, .resource-card {
+        height: 18rem;
+    }
+}

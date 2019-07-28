@@ -2911,6 +2911,14 @@ tt, code, kbd, samp, pre {
         background-color: #fff;
         opacity: 1;
     }
+
+    
+}
+
+@media (min-width: 992px){
+    .md-nav__item--active {
+        display: none;
+    }
 }
 
 
