@@ -21,19 +21,14 @@ $(".pancakes-parent").on('click', function(){
     }
 })
 
-$(".navbar_bottom-border .md-nav__title").on('click', function(){
-    alert("test")
-    $(this).parent().removeClass('mobile-sub-navbar-display');
-})
-
-
 $(".navbar_bottom-border").on('click', function(){
     if($(this).find('nav').hasClass( "invisible" )){
-        $(this).find('nav').addClass('mobile-sub-navbar-display');
         $(this).find('nav').removeClass( "invisible" );
+        $(this).find('nav').addClass('mobile-sub-navbar-display');        
     }
     else {
         $(this).find('nav').addClass( "invisible" );
+        $(this).find('nav').removeClass('mobile-sub-navbar-display');
     }
 })
 

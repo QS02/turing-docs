@@ -2923,6 +2923,13 @@ tt, code, kbd, samp, pre {
     }
 }
 
+.edit-me-link {
+    border: 2px solid #969696;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 4px 16px;
+    margin: 1rem 2rem;
+}
 
 /*# sourceMappingURL=data:application/json;
     charset=utf-8;
