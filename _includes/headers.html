@@ -21,15 +21,16 @@ $(".pancakes-parent").on('click', function(){
     }
 })
 
-$(".navbar_bottom-border").on('click', function(){
-    if($(this).find('nav').hasClass( "invisible" )){
-        $(this).find('nav').removeClass( "invisible" );
-        $(this).find('nav').addClass('mobile-sub-navbar-display');        
-    }
-    else {
-        $(this).find('nav').addClass( "invisible" );
-        $(this).find('nav').removeClass('mobile-sub-navbar-display');
-    }
+$(".pancakes-parent-mobile").on('click', function(){
+    var nav = $(this).next();
+    nav.removeClass( "invisible" );
+     nav.addClass('mobile-sub-navbar-display');
+})
+
+$(".mobile-navbar-back").on('click', function(){
+    var nav = $(this).parent();
+    nav.addClass( "invisible" );
+    nav.removeClass('mobile-sub-navbar-display');
 })
 
 </script>
