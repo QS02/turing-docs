@@ -46,7 +46,7 @@
                   id="pancakes-{{ section.title | slugify }}" title="{{ section.title }}">{{ section.title }}</a>
                   {% if section.children %}
                   <nav class="md-nav md-nav--secondary invisible">
-                    <label class="md-nav__title" for="__toc">Table of contents</label>
+                    <label class="md-nav__title" for="__toc" style="cursor: pointer;">Table of contents</label>
                     <ul class="md-nav__list" data-md-scrollfix="">
                       {% for child in section.children %}
                       <li class="md-nav__item navbar_bottom-border">
