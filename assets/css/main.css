@@ -729,6 +729,7 @@ hr {
     color: #fff;
     margin-top:50px;
     padding-top:30px;
+    padding-bottom:30px;
 }
 .md-footer-nav__inner {
     padding: .4rem;
@@ -797,6 +798,7 @@ html .md-footer-meta.md-typeset a:focus, html .md-footer-meta.md-typeset a:hover
 }
 .md-footer-copyright__highlight {
     color: hsla(0, 0%, 100%, .7);
+    text-align: center;
 }
 .md-footer-social {
     margin: 0 .8rem;
@@ -822,7 +824,6 @@ html .md-footer-meta.md-typeset a:focus, html .md-footer-meta.md-typeset a:hover
     font-weight: 700;
     text-overflow: ellipsis;
     overflow: hidden;
-    cursor:pointer;
 }
 .md-nav__title:before {
     display: none;
@@ -2921,6 +2922,24 @@ tt, code, kbd, samp, pre {
     .md-nav__item--active {
         display: none;
     }
+
+    .toc-side-bar {
+        position: relative;
+        padding-left: 1rem;
+    }
+    .toc-side-bar::before {
+        content: '{';
+        color: #ff1744;
+        position: absolute;
+        font-size: 16px;
+        left: 0;
+        display: none;
+    }
+
+    .toc-side-bar:hover:before {
+        font-weight: bold;
+        display: block;
+    }
 }
 
 .edit-me-link {
@@ -2934,6 +2953,7 @@ tt, code, kbd, samp, pre {
 .mobile-navbar-back {
     cursor: pointer;
 }
+
 /*# sourceMappingURL=data:application/json;
     charset=utf-8;
     base64, eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhc3NldHMvc3R5bGVzaGVldHMvYXBwbGljYXRpb24uYmEwZmQxYTYuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
