@@ -46,7 +46,7 @@
                   id="pancakes-{{ section.title | slugify }}" title="{{ section.title }}">{{ section.title }}</a>
                   {% if section.children %}
                   <nav class="md-nav md-nav--secondary invisible">
-                    <label class="md-nav__title" for="__toc" style="cursor: pointer;">Table of contents</label>
+                    <label class="md-nav__title" for="__toc" style="">Table of contents</label>
                     <ul class="md-nav__list" data-md-scrollfix="">
                       {% for child in section.children %}
                       <li class="md-nav__item navbar_bottom-border">
@@ -108,12 +108,12 @@
         <ul id="nav-toc" class="md-nav__list" data-md-scrollfix="">
         <!-- toc will be appended here!-->
         </ul>
-        <a href="{{ site.repo }}/edit/master/docs/{{ page.path }}" title="{{ site.repo }}/edit/master/docs/{{ page.path }}" class="md-nav__title" for="__toc" style="
+        <a href="{{ site.repo }}/edit/master/docs/{{ page.path }}" title="{{ site.repo }}/edit/master/docs/{{ page.path }}" style="
             border: 2px solid #969696;
             border-radius: 4px;
             display: inline-block;
             padding: 4px 16px;
-            margin-top: 2rem;
+            margin: 1rem 2rem;
         ">
           <i class="fa fa-github fa-1x"></i>
           Edit me
