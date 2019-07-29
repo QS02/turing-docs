@@ -2875,6 +2875,7 @@ tt, code, kbd, samp, pre {
 
 .navbar_bottom-border {
     border-bottom: 1px solid #ededed;
+    cursor: pointer;
 }
 
 .md-nav__list .mobile-sub-item {
