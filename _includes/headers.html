@@ -23,13 +23,11 @@ $(".pancakes-parent").on('click', function(){
 
 $(".pancakes-parent-mobile").on('click', function(){
     var nav = $(this).next();
-    nav.removeClass( "invisible" );
      nav.addClass('mobile-sub-navbar-display');
 })
 
 $(".mobile-navbar-back").on('click', function(){
     var nav = $(this).parent();
-    nav.addClass( "invisible" );
     nav.removeClass('mobile-sub-navbar-display');
 })
 

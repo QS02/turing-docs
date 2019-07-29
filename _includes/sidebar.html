@@ -45,8 +45,8 @@
                   <a class="md-nav__link pancakes-parent-mobile" 
                   id="pancakes-{{ section.title | slugify }}" title="{{ section.title }}">{{ section.title }}</a>
                   {% if section.children %}
-                  <nav class="md-nav md-nav--secondary invisible">
-                    <label class="md-nav__title mobile-navbar-back" for="__toc">Table of contents</label>
+                  <nav class="md-nav md-nav--secondary">
+                    <a class="md-nav__title mobile-navbar-back" for="__toc">Table of contents</a>
                     <ul class="md-nav__list" data-md-scrollfix="">
                       {% for child in section.children %}
                       <li class="md-nav__item navbar_bottom-border">
