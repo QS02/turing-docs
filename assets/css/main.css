@@ -2950,9 +2950,24 @@ tt, code, kbd, samp, pre {
     margin: 1rem 2rem;
 }
 
+.social-link {
+    display: inline-block;
+    padding: 4px 16px;
+    color: #0072be;    
+}
+
+.social-link .fa {
+    margin-right: 4px;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
 .mobile-navbar-back {
     cursor: pointer;
 }
+
 
 /*# sourceMappingURL=data:application/json;
     charset=utf-8;
